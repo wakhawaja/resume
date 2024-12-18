@@ -3,186 +3,162 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Khajawa Waqas Ahmed - CV</title>
+    <title>Khawaja Waqas Ahmed - CV</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
             line-height: 1.6;
-        }
-        header {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 20px 0;
-        }
-        h1, h2, h3 {
             margin: 0;
             padding: 0;
+            background-color: #f4f4f4;
         }
         .container {
-            display: flex;
-            flex-wrap: wrap;
-            margin: 20px;
-        }
-        .left-column, .right-column {
-            flex: 1;
+            width: 80%;
+            margin: 0 auto;
+            background: #fff;
             padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        .left-column {
-            background-color: #f4f4f4;
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        header img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+        }
+        h1, h2, h3 {
+            margin: 10px 0;
+        }
+        .section-title {
+            border-bottom: 2px solid #000;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
         }
         .section {
             margin-bottom: 20px;
-        }
-        h2 {
-            border-bottom: 2px solid #333;
-            margin-bottom: 10px;
-            font-size: 1.4em;
         }
         ul {
             list-style: none;
             padding: 0;
         }
-        ul li::before {
-            content: '\2022';
-            color: #333;
-            display: inline-block;
-            width: 1em;
-            margin-left: -1em;
+        ul li {
+            margin-bottom: 5px;
         }
-        img {
-            max-width: 100%;
-            border-radius: 50%;
+        .contact, .education, .languages, .skills, .certifications, .hobbies {
+            margin-bottom: 20px;
         }
-        .contact p, .education p, .skills p {
+        .contact p {
             margin: 5px 0;
         }
-        footer {
-            text-align: center;
-            padding: 10px;
-            background-color: #333;
-            color: #fff;
+        .skills ul, .languages ul {
+            columns: 2;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Khajawa Waqas Ahmed</h1>
-    </header>
     <div class="container">
-        <!-- Left Column -->
-        <div class="left-column">
-            <!-- Profile Picture -->
-            <div class="section contact">
-                <img src="profile-picture.jpg" alt="Profile Picture">
-                <h2>Contact</h2>
-                <p><strong>Address:</strong> Lahore, 54000, Pakistan</p>
-                <p><strong>Phone:</strong> 092-300-4311138</p>
-                <p><strong>Email:</strong> wakhawja@hotmail.com</p>
-            </div>
+        <header>
+            <img src="https://github.com/wakhawaja/resume/blob/main/assets/profile-pic%20(1).png" alt="Profile Picture">
+            <h1>Khawaja Waqas Ahmed</h1>
+        </header>
 
-            <!-- Education -->
-            <div class="section education">
-                <h2>Education</h2>
-                <p><strong>Bachelor of Science, IT</strong></p>
-                <p>Virtual University - Lahore</p>
-                <p>08/2024 - CGPA: 3.62/4.0</p>
+        <section class="section">
+            <h2 class="section-title">Professional Summary</h2>
+            <p>Data scientist and machine learning engineer with a robust background in developing innovative solutions, including an ML-based doctor recommendation system and a California housing price prediction model. Proficient in Python, Java, and PHP, with expertise in data cleaning, preprocessing, exploratory data analysis (EDA), and building regression and classification models.</p>
+        </section>
 
-                <p><strong>Associate Degree, Database Management Systems</strong></p>
-                <p>Virtual University - 01/2022</p>
-                <p>CGPA: 3.96/4.0</p>
-            </div>
+        <section class="section">
+            <h2 class="section-title">Experience</h2>
+            <h3>ML-Based Doctor Recommendation System</h3>
+            <p><strong>BS (IT) Final Project, Virtual University</strong> - Pakistan</p>
+            <ul>
+                <li>Tools & Technologies: Python, Flask, Beautiful Soup, scikit-learn, MySQL</li>
+                <li>Designed healthcare app to suggest custom doctor options based on user needs.</li>
+                <li>Scraped and processed doctor data using Beautiful Soup.</li>
+                <li>Designed and trained ML models with scikit-learn for ranking doctors.</li>
+                <li>Built a user-friendly web interface using Flask.</li>
+            </ul>
 
-            <!-- Languages -->
-            <div class="section">
-                <h2>Languages</h2>
-                <p>English: C2 (Proficient)</p>
-                <p>Urdu: C2 (Proficient)</p>
-            </div>
+            <h3>Pharmacy Management System (Android Application)</h3>
+            <p><strong>ADP (DBMS) Final Project, Virtual University</strong> - Pakistan</p>
+            <ul>
+                <li>Tools & Technologies: Java, PHP, MySQL, Android Studio</li>
+                <li>Developed an Android application for pharmacy operations.</li>
+                <li>Engineered backend logic in Java and APIs in PHP.</li>
+            </ul>
 
-            <!-- Skills -->
-            <div class="section skills">
-                <h2>Skills</h2>
-                <ul>
-                    <li>Data Cleaning & Preprocessing</li>
-                    <li>Exploratory Data Analysis (EDA)</li>
-                    <li>Regression & Classification Models</li>
-                    <li>Natural Language Processing (NLP)</li>
-                    <li>Programming: Python, Java, PHP</li>
-                    <li>Database: MySQL, MongoDB</li>
-                    <li>Web: HTML, CSS, Flask, React</li>
-                    <li>Tools: Git, VSCode, Anaconda</li>
-                </ul>
-            </div>
+            <h3>California Housing Price Prediction (ML Project)</h3>
+            <p><strong>Portfolio Building Project</strong></p>
+            <ul>
+                <li>Tools & Technologies: Python, Pandas, NumPy, Matplotlib, Scikit-learn</li>
+                <li>Built ML model to predict median house values using regression models.</li>
+            </ul>
 
-            <!-- Hobbies -->
-            <div class="section">
-                <h2>Hobbies and Interests</h2>
-                <p>Traveling, Swimming, Gym workouts</p>
-            </div>
-        </div>
+            <h3>Sentiment Analysis on Social Media Data</h3>
+            <p><strong>Portfolio Building Project</strong></p>
+            <ul>
+                <li>Tools & Technologies: Python, NLTK, Scikit-learn</li>
+                <li>Performed sentiment analysis using NLP techniques and machine learning models.</li>
+            </ul>
+        </section>
 
-        <!-- Right Column -->
-        <div class="right-column">
-            <!-- Professional Summary -->
-            <div class="section">
-                <h2>Professional Summary</h2>
-                <p>Data scientist and ML engineer with a robust background in innovative solutions, including a doctor recommender system and housing price prediction. Expertise in Python, Java, Flask, and MySQL. Committed to leveraging skills for healthcare accessibility and operational efficiency.</p>
-            </div>
+        <section class="section">
+            <h2 class="section-title">Education</h2>
+            <p><strong>Bachelor of Science, Information Technology</strong> - Virtual University, 08/2024</p>
+            <p>CGPA: 3.62/4.00</p>
+            <p><strong>Associate Degree Program, Database Management Systems</strong> - Virtual University, 01/2022</p>
+            <p>CGPA: 3.96/4.00</p>
+        </section>
 
-            <!-- Experience -->
-            <div class="section">
-                <h2>Experience</h2>
+        <section class="section skills">
+            <h2 class="section-title">Skills</h2>
+            <ul>
+                <li>Data Science & Machine Learning</li>
+                <li>Python (Pandas, NumPy, Scikit-learn)</li>
+                <li>Java, PHP</li>
+                <li>Flask, React.js</li>
+                <li>Web Scraping (Beautiful Soup, Tweepy)</li>
+                <li>SQL, MySQL, MongoDB</li>
+                <li>HTML, CSS, Bootstrap</li>
+                <li>Android Development</li>
+                <li>Git, VSCode</li>
+            </ul>
+        </section>
 
-                <h3>ML-Based Doctor Recommendation System</h3>
-                <p><em>BS IT Final Project, Virtual University</em></p>
-                <ul>
-                    <li>Designed healthcare app for doctor recommendations using Python, Flask, and MySQL.</li>
-                    <li>Scraped data using Beautiful Soup and trained ML models with scikit-learn.</li>
-                </ul>
+        <section class="section certifications">
+            <h2 class="section-title">Certifications</h2>
+            <ul>
+                <li>Python for Data Science and Machine Learning Bootcamp 2024 (Udemy)</li>
+                <li>Complete Data Wrangling & Data Visualization with Python (Udemy)</li>
+                <li>Python for Data Analysis & Data Science (Udemy)</li>
+            </ul>
+        </section>
 
-                <h3>Pharmacy Management System</h3>
-                <p><em>ADP DBMS Final Project</em></p>
-                <ul>
-                    <li>Developed an Android app using Java and MySQL for pharmacy operations.</li>
-                    <li>Created secure PHP APIs for backend and frontend communication.</li>
-                </ul>
+        <section class="section languages">
+            <h2 class="section-title">Languages</h2>
+            <ul>
+                <li>English - Proficient (C2)</li>
+                <li>Urdu - Proficient (C2)</li>
+            </ul>
+        </section>
 
-                <h3>California Housing Price Prediction</h3>
-                <p><em>Portfolio Project</em></p>
-                <ul>
-                    <li>Built a regression model using Pandas, Scikit-learn, and Matplotlib for house price analysis.</li>
-                </ul>
+        <section class="section hobbies">
+            <h2 class="section-title">Hobbies and Interests</h2>
+            <ul>
+                <li>Travelling to explore new cultures</li>
+                <li>Swimming for relaxation</li>
+                <li>Gym workouts for strength and health</li>
+            </ul>
+        </section>
 
-                <h3>Sentiment Analysis on Social Media Data</h3>
-                <p><em>Portfolio Project</em></p>
-                <ul>
-                    <li>Applied NLP techniques to classify tweets using Logistic Regression.</li>
-                </ul>
-
-                <h3>Sales Data Analysis</h3>
-                <p><em>Portfolio Project</em></p>
-                <ul>
-                    <li>Visualized trends and KPIs using Matplotlib and Seaborn.</li>
-                </ul>
-            </div>
-
-            <!-- Certifications -->
-            <div class="section">
-                <h2>Certifications</h2>
-                <ul>
-                    <li>Python for Data Science Bootcamp - Udemy (2024)</li>
-                    <li>Complete Data Wrangling with Python - Udemy</li>
-                    <li>Python for Data Analysis - Udemy</li>
-                </ul>
-            </div>
-        </div>
+        <section class="section contact">
+            <h2 class="section-title">Contact</h2>
+            <p><strong>Address:</strong> Lahore, 54000, Pakistan</p>
+            <p><strong>Phone:</strong> (092) 300-4311138</p>
+            <p><strong>Email:</strong> <a href="mailto:wakhawja@hotmail.com">wakhawja@hotmail.com</a></p>
+        </section>
     </div>
-
-    <footer>
-        <p>&copy; 2024 Khajawa Waqas Ahmed | Data Scientist & ML Engineer</p>
-    </footer>
 </body>
 </html>
